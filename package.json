@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "format": "prettier --write \"**/*.{js, jsx}\""
   },
   "dependencies": {
     "next": "10.0.5",
@@ -25,6 +26,7 @@
   },
   "homepage": "https://github.com/Adi-df/nextjs#readme",
   "devDependencies": {
+    "prettier": "2.2.1",
     "stylelint": "^13.8.0",
     "stylelint-config-standard": "^20.0.0"
   }
