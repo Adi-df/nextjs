@@ -11,5 +11,17 @@
     "next": "10.0.5",
     "react": "17.0.1",
     "react-dom": "17.0.1"
-  }
+  },
+  "description": "This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Adi-df/nextjs.git"
+  },
+  "author": "Adi-df",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Adi-df/nextjs/issues"
+  },
+  "homepage": "https://github.com/Adi-df/nextjs#readme"
 }
