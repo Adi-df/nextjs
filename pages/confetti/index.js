@@ -15,6 +15,19 @@ export default function Home() {
                 particleCount: sliders[0].value,
                 spread: 359,
             }),
+        rotation: ({ r, sliders }) => {
+            Confetti({
+                particleCount: sliders[0].value,
+                spread: 15,
+                angle: r,
+            });
+            if ((r - 90) / 360 < sliders[2].value)
+                setTimeout(
+                    () =>
+                        cannons.rotation({ r: r + sliders[1].value, sliders }),
+                    100
+                );
+        },
     };
 
     return (
@@ -44,6 +57,15 @@ export default function Home() {
                 sliders={[{ name: "power", max: 5000 }]}
                 name={"Circle"}
                 handler={cannons.circle}
+            />
+            <Cannon
+                sliders={[
+                    { name: "power", max: 50, default: 10 },
+                    { name: "speed", max: 40, default: 10 },
+                    { name: "turns", max: 10, default: 1 },
+                ]}
+                name={"Rotation"}
+                handler={(e) => cannons.rotation({ ...e, r: 90 })}
             />
         </div>
     );
