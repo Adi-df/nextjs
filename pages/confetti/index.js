@@ -10,6 +10,11 @@ export default function Home() {
             Confetti({
                 particleCount: sliders[0].value,
             }),
+        circle: ({ sliders }) =>
+            Confetti({
+                particleCount: sliders[0].value,
+                spread: 359,
+            }),
     };
 
     return (
@@ -34,6 +39,11 @@ export default function Home() {
                 sliders={[{ name: "power", max: 5000 }]}
                 name={"Powered"}
                 handler={cannons.powered}
+            />
+            <Cannon
+                sliders={[{ name: "power", max: 5000 }]}
+                name={"Circle"}
+                handler={cannons.circle}
             />
         </div>
     );
