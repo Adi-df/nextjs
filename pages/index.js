@@ -1,13 +1,24 @@
 import Head from "next/head";
+import HomeLink from "../components/homelink";
 
 export default function Home() {
+    let links = ["Confetti"];
+
     return (
         <div className="text-center p-5">
             <Head>
-                <title>My super NextApp</title>
-                <link rel="icon" href="/favicon.ico" />
+                <title>Home page</title>
             </Head>
-            <h1 className="text-red-600 text-5xl">Hello Tailwind</h1>
+            <h1 className="text-red-600 text-5xl">Hello Fun Page</h1>
+            <div className="flex flex-wrap p-20 w-full justify-around">
+                {links.map((link, i) => (
+                    <HomeLink
+                        key={i}
+                        name={link}
+                        href={`/${link.toLowerCase()}`}
+                    />
+                ))}
+            </div>
         </div>
     );
 }
