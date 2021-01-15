@@ -6,6 +6,10 @@ import Homebutton from "../../components/homebutton";
 export default function Home() {
     let cannons = {
         classic: () => Confetti(),
+        powered: ({ sliders }) =>
+            Confetti({
+                particleCount: sliders[0].value,
+            }),
     };
 
     return (
@@ -26,6 +30,11 @@ export default function Home() {
                 </button>
             </div>
             <Cannon sliders={[]} name={"Classic"} handler={cannons.classic} />
+            <Cannon
+                sliders={[{ name: "power", max: 5000 }]}
+                name={"Powered"}
+                handler={cannons.powered}
+            />
         </div>
     );
 }
