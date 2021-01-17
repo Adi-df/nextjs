@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Confetti from "canvas-confetti";
 import Cannon from "../../components/cannon";
-import Homebutton from "../../components/homebutton";
+import HomeButton from "../../components/homebutton";
 
 export default function Home() {
     let cannons = {
@@ -36,7 +36,7 @@ export default function Home() {
                 <title>Confetti</title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <Homebutton handleClick={() => Confetti.reset()} />
+            <HomeButton handleClick={() => Confetti.reset()} />
             <h1 className="text-red-600 text-5xl">Hello Confetti</h1>
             <div className="mt-10 flex w-full h-full justify-between flex-col">
                 <h2 className="text-2xl mb-5">Play with cannon confetti</h2>
