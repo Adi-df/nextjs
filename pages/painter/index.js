@@ -41,7 +41,7 @@ export default function Painter() {
     return (
         <div className="text-center p-5">
             <Head>
-                <title>Confetti</title>
+                <title>Painter</title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <HomeButton />
