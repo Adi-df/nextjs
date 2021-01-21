@@ -2,7 +2,7 @@ import Head from "next/head";
 import HomeLink from "../components/homelink";
 
 export default function Home() {
-    let links = ["Confetti", "Painter"];
+    let links = ["Confetti", "Painter", "Coq"];
 
     return (
         <div className="text-center p-5">
