@@ -6,3 +6,15 @@ body {
     padding: 0;
     margin: 0;
 }
+
+.wikipedia-table-v2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.wikipedia-table-v2 tbody tr {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
