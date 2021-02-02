@@ -29,7 +29,6 @@ export default function Home() {
             </div>
             <div className="flex flex-col w-full">{wikipages}</div>
             <button
-                className=""
                 onClick={addWikipage}
                 className="bg-blue-500 text-white p-2 rounded hover:bg-blue-600"
             >
