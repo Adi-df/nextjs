@@ -11,7 +11,7 @@
         "lintstyle": "stylelint styles/**/*.*"
     },
     "dependencies": {
-        "@dnd-kit/core": "^1.0.1",
+        "@dnd-kit/core": "3.1.1",
         "autoprefixer": "^10.2.1",
         "canvas-confetti": "^1.3.2",
         "next": "10.2.1",
