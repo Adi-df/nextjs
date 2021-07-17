@@ -34,7 +34,7 @@
     },
     "homepage": "https://github.com/Adi-df/nextjs#readme",
     "devDependencies": {
-        "eslint": "^7.17.0",
+        "eslint": "7.31.0",
         "eslint-config-prettier": "^7.1.0",
         "eslint-loader": "^4.0.2",
         "eslint-plugin-prettier": "^3.3.1",
